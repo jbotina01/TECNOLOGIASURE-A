@@ -8,3 +8,12 @@ Route::get('/', function () {
 Route::get('/menu', function () {
     return view('menu');
 })->name('menu');
+Route::get('/Nosotros', function () {
+    return view('Nosotros');
+})->name('Nosotros');
+Route::get('/Contacto', function () {
+    return view('Contacto');
+})->name('Contacto');
+Route::get('/formulario', function () {
+    return view('formulario');
+})->name('formulario');

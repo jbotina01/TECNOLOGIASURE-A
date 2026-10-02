@@ -7,7 +7,7 @@
         content="width=device-width, initial-scale=1.0"
     >
  
-    <title>@yield('titulo') | Kawasaki Motorcycles</title>
+    <title>@yield('titulo') | MAXTERCAN</title>
  
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
  
     <style>
         :root {
-            --cafe-oscuro: #0bd00b86;
+            --cafe-oscuro: #f78f06ee;
             --cafe: #000000;
             --caramelo: #c8873a;
             --crema: #fff7ed;
@@ -118,7 +118,7 @@
         <div class="container py-2">
             <a class="navbar-brand fw-bold" href="#">
                 
-                🏍️Kawasaki Motorcycles🏍️
+                MAXTERCAN
             </a>
  
             <button
@@ -156,7 +156,7 @@
                     <li class="nav-item">
                         <a
                             class="nav-link {{ request()->routeIs('nosotros') ? 'active' : '' }}"
-                            href="#"
+                            href="{{ route('Nosotros') }}"
                         >
                             Nosotros
                         </a>
@@ -165,9 +165,18 @@
                     <li class="nav-item">
                         <a
                             class="nav-link {{ request()->routeIs('contacto') ? 'active' : '' }}"
-                            href="#"
+                            href="{{ route('Contacto') }}"
                         >
                             Contacto
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link {{ request()->routeIs('formulario') ? 'active' : '' }}"
+                            href="{{ route('formulario') }}"
+                        >
+                            formulario
                         </a>
                     </li>
                 </ul>
